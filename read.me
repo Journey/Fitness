@@ -1,0 +1,50 @@
+# start fitness
+* `java -jar fitnesse-standalone.jar -p 8081`
+
+#The functions -
+		1. A wiki server
+		2. Generate ACC Test by ASL
+		3. Auto run ACC Test
+
+#Concepts:
+	* Fixture code: a java files- class, test code
+	* Division table/decision table
+	* The input use setter method
+
+		method? - methods
+
+
+		Fixture code
+			setter  - input
+			method? - output
+
+
+# Integration with selenium:
+		* Scenario library
+        * Driver script
+
+# template
+```
+!contents
+'''Given that i ....
+When I click search
+Then I should see a list of ....
+'''
+
+!define customVar {my var}
+!define TEST_SYSTEM {slim}
+!path C:\Project\
+
+
+!|import|
+|package|
+
+!|ClassName|
+|first|second|sum?|
+|4|5|9.0|
+|4|4|8.0|
+|3|4|5<_<8|
+
+
+!include .ExamplesPage.DriverScripts.GoogleSearch
+```
